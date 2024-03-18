@@ -2,14 +2,14 @@ package Bista;
 
 import javax.swing.JPanel;
 
-public class JanariKutxakBista extends JPanel {
+public class BizitzaBarraBista extends JPanel {
 
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * Create the panel.
 	 */
-	public JanariKutxakBista() {
+	public BizitzaBarraBista() {
 
 	}
 
