@@ -5,11 +5,13 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
 
 public class LeaderBoardBista extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
+	private JLabel lblNewLabel;
 
 	/**
 	 * Launch the application.
@@ -37,6 +39,13 @@ public class LeaderBoardBista extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
 		setContentPane(contentPane);
+		contentPane.add(getLblNewLabel());
 	}
 
+	private JLabel getLblNewLabel() {
+		if (lblNewLabel == null) {
+			lblNewLabel = new JLabel("New label");
+		}
+		return lblNewLabel;
+	}
 }
