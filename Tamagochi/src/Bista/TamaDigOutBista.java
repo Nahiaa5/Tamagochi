@@ -3,6 +3,8 @@ package Bista;
 import java.awt.EventQueue;
 import java.awt.Component;
 import javax.swing.BorderFactory;
+import javax.swing.ImageIcon;
+
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -20,7 +22,7 @@ public class TamaDigOutBista extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
-
+	private JPanel squaresPanel;
 	/**
 	 * Launch the application.
 	 */
@@ -42,7 +44,7 @@ public class TamaDigOutBista extends JFrame {
 	 */
 	public TamaDigOutBista() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 578, 394);
+		setBounds(100, 100, 588, 328);
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(0, 0, 0));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -64,8 +66,7 @@ public class TamaDigOutBista extends JFrame {
 		panel.setBackground(new Color(0, 0, 0));
 		contentPane.add(panel, BorderLayout.CENTER);
 		panel.setLayout(new GridLayout(8, 12, 0, 0));
-		
-		
+
 		Component[] components = panel.getComponents();
         for (Component component : components) {
             if (component instanceof JLabel) {
@@ -83,6 +84,7 @@ public class TamaDigOutBista extends JFrame {
 		panel.add(bat);
 		bat.setOpaque(true);
 		bat.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+		
 
 		
 		JLabel bi = new JLabel("");
@@ -90,6 +92,11 @@ public class TamaDigOutBista extends JFrame {
 		bi.setBackground(new Color(255, 0, 0));
 		bi.setOpaque(true);
 		bi.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+		ImageIcon icono = new ImageIcon("C:\\Users\\PC\\git\\nose tamagotchi\\Tamagochi\\Tamagochi\\src\\Bista\\dorayaki.png");
+		bi.setIcon(icono);
+		bi.setHorizontalAlignment(SwingConstants.CENTER);
+		bi.setVerticalAlignment(SwingConstants.CENTER);
+		
 		
         JLabel lblNewLabel_4 = new JLabel("");
 		lblNewLabel_4.setBackground(new Color(255, 255, 255));
@@ -565,6 +572,11 @@ public class TamaDigOutBista extends JFrame {
 		lblNewLabel_38.setBackground(Erdia);
 		lblNewLabel_38.setOpaque(true);
 		lblNewLabel_38.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+		ImageIcon icono2 = new ImageIcon("C:\\Users\\PC\\git\\nose tamagotchi\\Tamagochi\\Tamagochi\\src\\Bista\\MimitchiMini1.png");
+		lblNewLabel_38.setIcon(icono2);
+		lblNewLabel_38.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_38.setVerticalAlignment(SwingConstants.CENTER);
+		
 
 		JLabel lblNewLabel_32 = new JLabel("");
 		panel.add(lblNewLabel_32);
